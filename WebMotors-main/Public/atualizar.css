@@ -1,0 +1,38 @@
+body{
+    background-color: lightgrey;
+}
+
+
+a{
+        padding-left: 25px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+#dados1{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+#but{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+#post{
+    margin-left: 50px;
+    border-radius: 15px;
+
+}
+
+#carro{
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    margin-left: 50px;
+}

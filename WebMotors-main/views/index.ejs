@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <form action="/cadastra" method="post">
+        <div id="botao">
+            <input type="submit" value="Cadastrar">
+        </div>
+    </form>
+    <form action="/logar" method="post">
+        <div id="botaolo">
+            <input type="submit" value="Logar">   
+        </div>     
+    </form>
+
+</header>
+
+    <h1>CarrosWEB.vrum</h1>
+    <div id="carro">
+        <h2>Listagem de carros Disponiveis:</h2>
+    </div>
+
+    <div id="lista">
+        <br>
+        <% for (let i = 0; i < info.length; i++) { %>
+            <div id="post">
+                <p>MARCA: <%= info[i].db_marca %></p>
+                <p>MODELO: <%= info[i].db_modelo %></p>
+                <p>ANO: <%= info[i].db_ano %></p>
+                <p>QUANTIDADE: <%= info[i].db_qtd %></p>
+            </div>
+        <% } %> 
+    </div>
+    <div id="botaov">    
+        <form action="/vender" method="post">
+            <div id="botaovend">
+                <input type="submit" value="Comprar!">   
+            </div>     
+        </form>
+    </div> 
+ 
+    
+</body>
+</html>

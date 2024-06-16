@@ -1,0 +1,54 @@
+body{
+    background-color: lightgrey;
+}
+
+header{
+    display: flex;
+    padding: 30px;
+    margin-left: 30px;
+
+
+}
+
+#botao{
+    display: flex;
+    padding-right: 80px;
+    height: 70px;
+}
+
+#botaolo{
+    display: flex;
+    padding-right: 40px;
+    height: 70px;
+}
+
+
+h1 {
+    display: flex;
+    margin-left: 30px;
+}
+
+#carro{
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+#lista{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#post{
+    margin-left: 50px;
+    border-radius: 15px;
+
+}
+
+#botaov{
+    padding: 35px;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda</title>
+    <link href="Venda.css" rel="stylesheet">
+</head>
+<body>
+    <a href="/">Voltar</a>
+    <h1>Venda</h1>
+    <div id="info">
+        <form action="/vender_carro" method="post">
+            Marca: <input type="text" name="Marca">
+            Modelo: <input type="text" name="Modelo">
+            Ano: <input type="text" name="Ano">
+        <div id="but">
+            <input type="submit" value="Enviar">
+        </div>
+        </form>
+    </div>
+    <br>
+    <div id="carro">
+        <h2>Listagem de carros Disponiveis:</h2>
+    </div>
+        <br>
+    <div id="lista">
+        <% for (let i = 0; i < info.length; i++) { %>
+            <div id="post">
+                <p>MARCA: <%= info[i].db_marca %></p>
+                <p>MODELO: <%= info[i].db_modelo %></p>
+                <p>ANO: <%= info[i].db_ano %></p>
+                <p>QUANTIDADE: <%= info[i].db_qtd %></p>
+            </div>
+        <% } %>
+    </div>
+</body>
+</html>
